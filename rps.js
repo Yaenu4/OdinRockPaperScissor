@@ -16,4 +16,40 @@ break;
  choice = "paper";
 break;
 }
+return choice;
+}
+// 2. call Computerchoice to get choice of pc
+// take choice of player
+// all letter small
+// get result who wins?
+// if player = getcomputer choice its a tie
+// if player = rock and computer = scissors - You Win! Rock beats Scissors
+
+
+function playRound(playerSelection, computerSelection) {
+playerSelection = playerSelection.toLowerCase();
+computerSelection = getComputerChoice();
+
+switch(true) {
+    case playerSelection === computerSelection :
+    console.log("It's a tie! Play Again!");
+    break;
+    case playerSelection === "rock" && computerSelection === "scissors" :
+    console.log("You Win! Rock beats scissors!");
+    break;   
+    case playerSelection === "rock" && computerSelection === "paper" :
+    console.log("You lose! Paper beats Rock!");
+    break;
+    case playerSelection === "scissors" && computerSelection === "paper" :
+    console.log("You Win! Scissors beats paper!");
+    break;
+    case playerSelection === "scissors" && computerSelection === "rock" :
+    console.log("You lose! Rock beats scissors!")
+    break;
+    case playerSelection === "paper" && computerSelection === "rock" :
+    console.log("You win! Paper beats rock!");
+    break;
+    case playerSelection === "paper" && computerSelection === "scissors" :
+    console.log("You lose! Scissors beats paper!")            
+}
 }
