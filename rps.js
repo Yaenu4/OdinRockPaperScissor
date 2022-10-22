@@ -32,24 +32,24 @@ computerSelection = getComputerChoice();
 
 switch(true) {
     case playerSelection === computerSelection :
-    console.log("It's a tie! Play Again!");
+    return ("It's a tie! Play Again!");
     break;
     case playerSelection === "rock" && computerSelection === "scissors" :
-    console.log("You Win! Rock beats scissors!");
+    return ("You Win! Rock beats scissors!");
     break;   
     case playerSelection === "rock" && computerSelection === "paper" :
-    console.log("You lose! Paper beats Rock!");
+    return ("You lose! Paper beats Rock!");
     break;
     case playerSelection === "scissors" && computerSelection === "paper" :
-    console.log("You Win! Scissors beats paper!");
+    return("You Win! Scissors beats paper!");
     break;
     case playerSelection === "scissors" && computerSelection === "rock" :
-    console.log("You lose! Rock beats scissors!")
+    return ("You lose! Rock beats scissors!")
     break;
     case playerSelection === "paper" && computerSelection === "rock" :
-    console.log("You win! Paper beats rock!");
+    return ("You win! Paper beats rock!");
     break;
     case playerSelection === "paper" && computerSelection === "scissors" :
-    console.log("You lose! Scissors beats paper!")            
+    return ("You lose! Scissors beats paper!")            
 }
 }
